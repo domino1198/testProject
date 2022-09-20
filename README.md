@@ -6,7 +6,7 @@
 
 Выполните команды в терминале:
 ### `git clone -b main https://github.com/domino1198/testProject`
-###cd testProject
+###`cd testProject`
 ### `npm i` 
 or 
 ### `yarn`
