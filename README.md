@@ -6,6 +6,7 @@
 
 Выполните команды в терминале:
 ### `git clone -b main https://github.com/domino1198/testProject`
+### `cd testProject`
 ### `npm i` 
 or 
 ### `yarn`
@@ -14,13 +15,13 @@ or
 ## Запуск приложения
 
 Выполните команду:
-### `npm dev`
+### `npm run dev`
 or
 ### `yarn dev`
 
 ## Данные для авторизации
 
-login : User
+login : User,
 password : User
 
 
