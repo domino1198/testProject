@@ -54,7 +54,7 @@ export const ContactComponent = ({add, CRUD, data}: IContact) => {
                                        id="name"
                                        label="Name"
                                        variant="standard"/>
-                            <TextField onChange={(e) => e.target.value.length < 14 && setPhone(e.target.value)}
+                            <TextField onChange={(e) => e.target.value.length < 19 && setPhone(e.target.value)}
                                        value={phone}
                                        type="tel"
                                        id="phone"
@@ -66,7 +66,7 @@ export const ContactComponent = ({add, CRUD, data}: IContact) => {
                                         style={{width: 50, height: 50}} color="primary"
                                         disabled={phone.split(' ').join('').length === 0 ||
                                             name.split(' ').join('').length === 0 ||
-                                            phone.replace(/^(\s*)?(\+)?([-()+]?\d[-()+]?){10,14}(\s*)?$/, "") !== ""}
+                                            phone.replace(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/, "") !== ""}
                                         component="label">
                                 <PlusOneIcon/>
                             </IconButton> : data ?
@@ -76,7 +76,7 @@ export const ContactComponent = ({add, CRUD, data}: IContact) => {
                                                 color="primary"
                                                 disabled={phone.split(' ').join('').length === 0 ||
                                                     name.split(' ').join('').length === 0 ||
-                                                    phone.replace(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/, "") !== ""}>
+                                                    phone.replace(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/, "") !== ""}>
                                         <DoneIcon/>
                                     </IconButton>
                                     <IconButton onClick={() => setChange(false)} style={{width: 40, height: 40}}
