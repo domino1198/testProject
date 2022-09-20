@@ -20,7 +20,7 @@ or
 
 ## Данные для авторизации
 
-login : User
+login : User,
 password : User
 
 
